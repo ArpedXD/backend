@@ -14,8 +14,8 @@ public class Dodge {
     }
 
     @PostMapping("/end")
-    public void Score(@RequestBody String inp){
-        service.Score(inp);
+    public void Score(@RequestBody ScoreRequest inp){
+        service.Score(inp.a, inp.b);
     }
 }
 
